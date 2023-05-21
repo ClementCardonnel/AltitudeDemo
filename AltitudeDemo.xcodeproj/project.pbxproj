@@ -11,6 +11,13 @@
 		41A814222A19F94B00C9AFEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A814212A19F94B00C9AFEB /* ContentView.swift */; };
 		41A814242A19F94B00C9AFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A814232A19F94B00C9AFEB /* Assets.xcassets */; };
 		41A814282A19F94B00C9AFEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A814272A19F94B00C9AFEB /* Preview Assets.xcassets */; };
+		41FCA7D82A1A1E4300E90DB1 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCA7D72A1A1E4300E90DB1 /* MotionController.swift */; };
+		41FCA7DA2A1A1EA100E90DB1 /* AltitudeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCA7D92A1A1EA100E90DB1 /* AltitudeData.swift */; };
+		41FCA7DC2A1A1F6200E90DB1 /* AbsoluteAltitudeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCA7DB2A1A1F6200E90DB1 /* AbsoluteAltitudeList.swift */; };
+		41FCA7DE2A1A200900E90DB1 /* RelativeAltitudeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCA7DD2A1A200900E90DB1 /* RelativeAltitudeList.swift */; };
+		41FCA7E02A1A21D300E90DB1 /* PlaybackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCA7DF2A1A21D300E90DB1 /* PlaybackButton.swift */; };
+		41FCA7E52A1A234400E90DB1 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 41FCA7E42A1A234400E90DB1 /* LICENSE.md */; };
+		41FCA7E72A1A240F00E90DB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41FCA7E62A1A240F00E90DB1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		41A814232A19F94B00C9AFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A814252A19F94B00C9AFEB /* AltitudeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AltitudeDemo.entitlements; sourceTree = "<group>"; };
 		41A814272A19F94B00C9AFEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41FCA7D72A1A1E4300E90DB1 /* MotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = "<group>"; };
+		41FCA7D92A1A1EA100E90DB1 /* AltitudeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeData.swift; sourceTree = "<group>"; };
+		41FCA7DB2A1A1F6200E90DB1 /* AbsoluteAltitudeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteAltitudeList.swift; sourceTree = "<group>"; };
+		41FCA7DD2A1A200900E90DB1 /* RelativeAltitudeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeAltitudeList.swift; sourceTree = "<group>"; };
+		41FCA7DF2A1A21D300E90DB1 /* PlaybackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackButton.swift; sourceTree = "<group>"; };
+		41FCA7E42A1A234400E90DB1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		41FCA7E62A1A240F00E90DB1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,8 @@
 		41A814132A19F94B00C9AFEB = {
 			isa = PBXGroup;
 			children = (
+				41FCA7E42A1A234400E90DB1 /* LICENSE.md */,
+				41FCA7E62A1A240F00E90DB1 /* README.md */,
 				41A8141E2A19F94B00C9AFEB /* AltitudeDemo */,
 				41A8141D2A19F94B00C9AFEB /* Products */,
 			);
@@ -53,7 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				41A8141F2A19F94B00C9AFEB /* AltitudeDemoApp.swift */,
-				41A814212A19F94B00C9AFEB /* ContentView.swift */,
+				41FCA7E12A1A21E800E90DB1 /* Model */,
+				41FCA7E22A1A21F100E90DB1 /* Controller */,
+				41FCA7E32A1A21F800E90DB1 /* View */,
 				41A814232A19F94B00C9AFEB /* Assets.xcassets */,
 				41A814252A19F94B00C9AFEB /* AltitudeDemo.entitlements */,
 				41A814262A19F94B00C9AFEB /* Preview Content */,
@@ -67,6 +85,33 @@
 				41A814272A19F94B00C9AFEB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41FCA7E12A1A21E800E90DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41FCA7D92A1A1EA100E90DB1 /* AltitudeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41FCA7E22A1A21F100E90DB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41FCA7D72A1A1E4300E90DB1 /* MotionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41FCA7E32A1A21F800E90DB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41A814212A19F94B00C9AFEB /* ContentView.swift */,
+				41FCA7DF2A1A21D300E90DB1 /* PlaybackButton.swift */,
+				41FCA7DB2A1A1F6200E90DB1 /* AbsoluteAltitudeList.swift */,
+				41FCA7DD2A1A200900E90DB1 /* RelativeAltitudeList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A814282A19F94B00C9AFEB /* Preview Assets.xcassets in Resources */,
+				41FCA7E52A1A234400E90DB1 /* LICENSE.md in Resources */,
+				41FCA7E72A1A240F00E90DB1 /* README.md in Resources */,
 				41A814242A19F94B00C9AFEB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A814222A19F94B00C9AFEB /* ContentView.swift in Sources */,
+				41FCA7D82A1A1E4300E90DB1 /* MotionController.swift in Sources */,
+				41FCA7DC2A1A1F6200E90DB1 /* AbsoluteAltitudeList.swift in Sources */,
+				41FCA7DE2A1A200900E90DB1 /* RelativeAltitudeList.swift in Sources */,
 				41A814202A19F94B00C9AFEB /* AltitudeDemoApp.swift in Sources */,
+				41FCA7DA2A1A1EA100E90DB1 /* AltitudeData.swift in Sources */,
+				41FCA7E02A1A21D300E90DB1 /* PlaybackButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +317,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AltitudeDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = N75B9ZB926;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Mi motion";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,7 +332,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -287,7 +340,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rheaparks.AltitudeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,10 +358,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AltitudeDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = N75B9ZB926;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Mi motion";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +373,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -325,7 +381,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rheaparks.AltitudeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
